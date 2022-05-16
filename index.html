@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 49</title>
+    <link rel="shortcut icon" href="https://sidehustle.ng/meta/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+           crossorigin="anonymous">
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">       
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header>
+        
+        <nav class="nav">
+            <div>
+          <a href="/" class="logo"
+            ><img src="./sidehustle.png" alt="logo"
+          /></a>
+        </div>
+        <button class="hamburger" id="hamburger">
+           <i class="bi bi-list"></i> 
+        </button>
+          <div class="nav-links" id="navLinks">
+              <a href="#">FAQs</a>
+              <a href="#">Contact</a>
+              <a href="#">Register/Sign in</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Form -->
+      <section class="p-5">
+          <div class="container col-lg-5 col-md-6 px-5 py-3 border border-3 border-dark rounded-3">
+              <h1 class="text-center col-md-12 col-xs-3">GROUP 49</h1>
+           <form class="myform" id="myform">
+
+            <div class="form mb-1 ">
+                <label for="Username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username">
+                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <small>Error Message</small>
+              </div>
+
+              <div class="form mb-1">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="e.g name@example.com">
+                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <small>Error Message</small>
+              </div>
+
+              <div class="form mb-1">
+                <label for="formGroupExampleInput" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phonenumber" placeholder="e.g 1234567890">
+                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <small>Error Message</small>
+              </div>
+
+              <div class="form mb-1">
+                <label for="formGroupExampleInput2" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="xxxxxxxx"><i class="bi bi-eye-slash-fill"  id="togglePassword"></i>
+                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <small>Error Message</small>
+              </div>
+
+              <div class="form mb-1">
+                <label for="formGroupExampleInput2" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmpassword" placeholder="xxxxxxxx"><i class="bi bi-eye-slash-fill bi2"  id="togglePassword2"></i>
+                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <small>Error Message</small>
+              </div>
+
+              <!-- Gender -->
+              <div class="gender btn-group btn-group-toggle mb-2" data-toggle="buttons">
+                <label class="btn btn-lg">
+                  <input type="radio" name="options" id="option1"  autocomplete="off"> Male
+                </label>
+                <label class="btn btn-lg">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Female
+                </label>
+                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <small>Error Message</small>
+              </div><br>
+              <button class="bt btn-lg btn-success mt-4">Submit</button>
+            </form>
+            </div>
+
+         
+      </section>
+
+
+
+<!-- <script>
+    const togglePassword = document
+            .querySelector('#togglePassword');
+     const togglePassword2 = document.querySelector('#togglePassword2');
+  
+        const password = document.querySelector('#password');
+        const confirmpassword = document.querySelector('#confirmpassword')
+  
+        togglePassword.addEventListener('click', () => {
+  
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+            
+                  
+            password.setAttribute('type', type);
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('bi-eye');
+        });
+
+        togglePassword2.addEventListener('click', () => {
+
+  const type = confirmpassword
+      .getAttribute('type') === 'password' ?
+      'text' : 'password';
+  
+        
+  confirmpassword.setAttribute('type', type);
+  
+  this.classList.toggle('bi2');
+});
+</script> -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+              crossorigin="anonymous"></script>
+      
+        <script src="./script.js"></script>
+</body>
+</html>

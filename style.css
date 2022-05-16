@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+
+}
+
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 70px;
+    flex-wrap: wrap;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(2, 175, 2);
+    
+    margin: 40px;
+}
+.hamburger{
+    color: rgb(2, 175, 2);
+    font-size: 40px;
+    border-style: none;
+    background-color: transparent;
+    display: none;
+}
+
+/* FORM */
+.form{
+    position: relative;
+}
+.form i.bi-check-circle-fill{
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    visibility: hidden;
+}
+.form i.bi-exclamation-circle-fill{
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    visibility: hidden;
+}
+.form i.bi-eye-slash-fill{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: visible;
+}
+.form small{
+    
+    visibility: hidden;
+    
+    
+    
+}
+.gender{
+    position: relative;
+}
+.gender i{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 230px;
+    top: 12px;
+    visibility: hidden;
+
+}
+.gender small{
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    bottom: -15px;
+    visibility: hidden;
+    
+}
+
+
+/* success & Error */
+
+.form.success input{
+    border-color: #2ecc71;
+}
+
+.form.success i.bi-check-circle-fill{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form.error input{
+    border-color: #e74c3c;
+}
+.form.error i.bi-exclamation-circle-fill{
+    visibility: visible;
+    color: #e74c3c;
+}
+.form.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px){
+    .nav{
+        padding: 10px 0px;
+        margin: 20px;
+    }
+    .hamburger{
+        display: block;
+    
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        transition: top 1s ease;
+        gap: 5px;
+        justify-content: end;
+        align-items: flex-end;
+        
+        
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .nav-links.show{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid rgb(2, 175, 2);
+        gap: 5px;
+        justify-content: end;
+       
+       
+        
+       
+       
+        
+    }
+    .nav-links.show a{
+       transition: all 0.7s;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .nav{
+        margin: 30px 20px ;
+    }
+}
