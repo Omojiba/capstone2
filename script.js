@@ -1,36 +1,4 @@
 
-    const togglePassword = document
-            .querySelector('#togglePassword');
-     const togglePassword2 = document.querySelector('#togglePassword2');
-  
-        const Password = document.querySelector('#password');
-        const confirmPassword = document.querySelector('#confirmpassword')
-  
-        togglePassword.addEventListener('click', () => {
-  
-            // Toggle the type attribute using
-            // getAttribure() method
-            const type = Password
-                .getAttribute('type') === 'password' ?
-                'text' : 'password';
-            
-                  
-            Password.setAttribute('type', type);
-            // Toggle the eye and bi-eye icon
-            this.classList.toggle('bi-eye');
-        });
-
-        togglePassword2.addEventListener('click', () => {
-
-  const type = confirmPassword
-      .getAttribute('type') === 'password' ?
-      'text' : 'password';
-  
-        
-  confirmPassword.setAttribute('type', type);
-  
-  this.classList.toggle('bi2');
-});
 
 // Nav
 const hamburger = document.getElementById('hamburger');
@@ -140,4 +108,38 @@ function isEmail(email){
 }
 
 
+
+// PASSWORD TOGGLE
+const togglePassword = document
+            .querySelector('#togglePassword');
+     const togglePassword2 = document.querySelector('#togglePassword2');
+  
+        const Password = document.querySelector('#password');
+        const confirmPassword = document.querySelector('#confirmpassword')
+  
+        togglePassword.addEventListener('click', () => {
+  
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = Password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+            
+                  
+            Password.setAttribute('type', type);
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('bi-eye');
+        });
+
+        togglePassword2.addEventListener('click', () => {
+
+  const type = confirmPassword
+      .getAttribute('type') === 'password' ?
+      'text' : 'password';
+  
+        
+  confirmPassword.setAttribute('type', type);
+  
+  this.classList.toggle('bi2');
+});
 
