@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(/Worldview7.jpg);
+    background-position: center;
+    background-size: cover;
+}
 header{
     width: 100%;
 
@@ -17,7 +22,7 @@ header{
 .nav-links a{
     text-decoration: none;
     color: rgb(2, 175, 2);
-    
+    font-weight: 500;
     margin: 40px;
 }
 .hamburger{
@@ -31,6 +36,15 @@ header{
 /* FORM */
 .form{
     position: relative;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1{
+    color: rgb(2, 175, 2);
+    font-family: 'Macondo', cursive;
+    
 }
 .form i.bi-check-circle-fill{
     position: absolute;
@@ -49,6 +63,7 @@ header{
     top: 40px;
     right: 10px;
     visibility: visible;
+    opacity: 0.8;
 }
 .form small{
     
